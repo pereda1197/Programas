@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <link rel="stylesheet" href="style.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <script type="text/javascript" src="js/p1.js"></script>
+     <link rel="stylesheet" href="https://unpkg.com/@clr/ui/clr-ui.min.css" />
+
+     <title>Práctica 1</title>
+</head>
+
+<body>
+     <div class="lienzo">
+          <div class="botones">Elige algoritmo:
+               <div class="radio btn">
+                         <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-1">
+                         <label for="btn-demo-radio-1" onclick="aplicaSlope()">Slope Intercept</label>
+                </div>
+               <div class="radio btn">
+                         <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-2">
+                         <label for="btn-demo-radio-2" onclick="aplicaDDA()">DDA</label>
+               </div>
+               <div class="radio btn">
+                         <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-3">
+                         <label for="btn-demo-radio-3" onclick="aplicaBerserham()">Berserham</label>
+               </div>
+               <div class="radio btn">
+                    <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-4">
+                    <label for="btn-demo-radio-4" onclick="aplicaSlopeMal()">Slope Mal</label>
+               </div>
+          </div>
+          <canvas width="600" height="600" id="canvas" > </canvas>
+          <div class="tabla">Puntos:
+               <div id="puntos" style="overflow-y: scroll"></div>
+          </div>
+     </div>
+</body>
+
+</html>
