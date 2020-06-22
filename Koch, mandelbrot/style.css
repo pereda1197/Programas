@@ -1,0 +1,42 @@
+canvas{
+     background-color: rgb(39, 39, 34);
+     border: 1px solid black;
+     margin: 2% 0% 0 10%;
+     width: 600px;
+     height: 600px;
+}
+
+body{
+     margin:0;
+}
+
+.lienzo{
+     display:flex;
+     width: 600px;
+}
+
+#funciones{
+     height:600px;
+     width:10%;
+     width:170px;
+     border:1px solid black;
+}
+
+.tabla{
+     margin-top:1%;
+     margin-left:10%;
+}
+
+.botones{
+     display:flex;
+     flex-direction: column;
+     margin-top:2%;
+     margin-left:5%;
+}
+
+.botones2{
+     display:flex;
+     flex-direction: column;
+     margin-top:2%;
+     margin-left:10%;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <link rel="stylesheet" href="style.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <script type="text/javascript" src="js/p3.js"></script>
+     <script
+     src="https://code.jquery.com/jquery-3.3.1.min.js"
+     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+     crossorigin="anonymous"></script>     
+     <script async src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.4.0/fabric.min.js"></script>
+     <link rel="stylesheet" href="https://unpkg.com/@clr/ui/clr-ui.min.css" />
+     
+
+     <title>Práctica 3</title>
+</head>
+
+<body>
+     <div class="lienzo">
+          <div class="botones">
+               <strong>Introduce datos:</strong>
+               
+               <div>   
+                         <label>a:</label>
+                         <input type="number" class="a">
+                         <label>b: </label>
+                         <input type="number" class="b">
+                         <label>c: </label>
+                         <input type="number" class="c">
+                         <label>d: </label>
+                         <input type="number" class="d">
+                         <label>e: </label>
+                         <input type="number" class="e">
+                         <label>f: </label>
+                         <input type="number" class="f">
+               </div>
+               <div class="radio btn">
+                    <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-1">
+                    <label for="btn-demo-radio-1" onclick="anadeFuncion()">Añade función</label>
+               </div>
+               <div>
+                    <label>Función borrar:</label>
+                    <input type="number" class="funcion1">
+                    <label>Función modificar:</label>
+                    <input type="number" class="funcion2">
+               </div>
+               <div class="radio btn">
+                    <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-2">
+                    <label for="btn-demo-radio-2" onclick="borraFuncion()">Borra función</label>
+               </div>
+               <div class="radio btn">
+                    <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-3">
+                    <label for="btn-demo-radio-3" onclick="modificaFuncion()">Modifica función</label>
+               </div>
+          </div>
+
+          <canvas width="600" height="600" id="canvas"></canvas>
+
+          <div class="tabla">
+               <strong>Funciones:</strong>
+               <div id="funciones" style="overflow-y: scroll"></div>
+          </div> 
+          
+          <div class="botones2">
+                    <div class="radio btn">
+                         <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-8">
+                         <label for="btn-demo-radio-8" onclick="spierpinsky(-300,300,0,-300,300,300,5)">Spierpinsky</label>
+                    </div>
+                    <div class="radio btn">
+                         <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-9">
+                         <label for="btn-demo-radio-9" onclick="mandelbrot()">Mandelbrot</label>
+                    </div>
+                    <div class="radio btn">
+                         <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-10">
+                         <label for="btn-demo-radio-10" onclick="koch()">Koch</label>
+                    </div>
+                    <div class="radio btn">
+                         <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-11">
+                         <label for="btn-demo-radio-11" onclick="tree()">Tree Fractal</label>
+                    </div>
+                    <strong>Introduce número transiciones:</strong>
+                    <div>   
+                         <label>T:</label>
+                         <input type="number" class="T">
+                    </div>
+                    <p></p>
+                    <div class="radio btn">
+                         <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-4">
+                         <label for="btn-demo-radio-4" onclick="pinta()">Pinta</label>
+                    </div>
+                    <div class="radio btn">
+                         <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-5">
+                         <label for="btn-demo-radio-5" onclick="limpia()">Limpia</label>
+                    </div>
+                    <div class="radio btn">
+                         <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-6">
+                         <label for="btn-demo-radio-6" onclick="background()">Limpia Pantalla</label>
+                    </div>
+                    <p></p>
+                    <div class="radio btn">
+                         <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-7">
+                         <label for="btn-demo-radio-7" onclick="background()">Background</label>  
+                    </div>
+                    <input type="color" class="background">
+                    <div>   
+                         <label><strong>Color:</strong></label>
+                         <input type="color" class="color">
+                         
+                    </div>
+          </div>
+     </div>
+</body>
+
+</html>
