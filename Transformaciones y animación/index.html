@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <link rel="stylesheet" href="style.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <script type="text/javascript" src="js/p2Final.js"></script>
+     <script
+     src="https://code.jquery.com/jquery-3.3.1.min.js"
+     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+     crossorigin="anonymous"></script>     
+     <script async src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.4.0/fabric.min.js"></script>
+     <link rel="stylesheet" href="https://unpkg.com/@clr/ui/clr-ui.min.css" />
+     
+
+     <title>Práctica 2</title>
+</head>
+
+<body>
+     <div class="lienzo">
+          <div class="botones">
+               <p><strong>Elige transformación:</strong></p>
+               <div class="radio btn">
+                         <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-1">
+                         <label for="btn-demo-radio-1" onclick="limpia()">Start</label>
+                </div>
+                <div>
+                         <label>X:</label>
+                         <input type="number" class="transx">
+                         <label>Y:</label>
+                         <input type="number" class="transy">
+                         <button class="btn btn-outline translate" onclick="trasladar()">Trasladar</button>
+               </div>
+               <div>   
+                         <label>X: </label>
+                         <input type="number" class="escx">
+                         <label>Y: </label>
+                         <input type="number" class="escy">
+                    <button class="btn btn-outline escale" onclick="escalar()">Escalar</button>
+               </div>
+               <div>   
+                         <label>Ang: </label>
+                         <input type="number" class="ang">
+                         <label>X: </label>
+                         <input type="number" class="rotx">
+                         <label>Y: </label>
+                         <input type="number" class="roty">
+                    <button class="btn btn-outline rotate" onclick="rotar()">Rotar</button>
+               </div>
+          </div>
+          <canvas width="600" height="600" id="canvas" > </canvas>
+          <div class="tabla">Puntos:
+               <div id="puntos" style="overflow-y: scroll"></div>
+          </div>
+          <div class="botonAnimacion">
+               <div class="radio btn">
+                         <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-animacion">
+                         <label for="btn-demo-radio-animacion" onclick="animacion()">Ver animación</label>
+               </div>
+          </div>
+          
+     </div>
+</body>
+
+</html>
